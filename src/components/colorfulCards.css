@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'segoeui';
+    src: local('segoeui'), url(../fonts/segoeui.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'segoeuib';
+    src: local('segoeuib'), url(../fonts/segoeuib.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'segoeuil';
+    src: local('segoeuil'), url(../fonts/segoeuil.ttf) format('truetype');
+}
+
+.container{
+   
+}
+
+.main-title{
+    color: #0072c6;
+    font-family: "segoeui";
+    padding-bottom: 18px;
+}
+
+.main-desc{
+    color:#707070;
+    padding-bottom: 18px;
+}
+
+.sections{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr));
+    gap: 1.5vw 6vh;
+    padding: 0 7% 0 7%;
+    
+    
+}
+
+.card-container{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 5fr;
+    color: white;
+    padding: 13px;
+    
+}
+
+.left{
+    align-items: center;
+    padding-right: 8px;
+}
+
+.icon{
+    height: auto;
+    width: 55px;
+}
+.right{
+    text-align: left;
+    padding-right: 5px;
+}
+.title{
+    margin: 0;
+    font-family: 'segoeuil';
+    font-size: 1.2em;
+    margin-bottom: 7px;
+}
+
+.description{
+    margin: 0;
+    font-family: 'segoeuil';
+    font-size: 0.9em;
+}
+
