@@ -1,0 +1,71 @@
+.header {
+    overflow: hidden;
+    background-color: #0073c6;
+    padding: 10px 100px 0px 100px;
+    
+  }
+
+  .menuIcon{
+    display: none;
+    background: transparent;
+    border: 0px solid transparent;
+  }
+  
+  .menuIcon i{
+      font-size: 45px;
+      color: white;
+  }
+
+  .header a {
+    float: left;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+    font-family: "segoeui";
+    margin-left: 50px;
+  }
+
+  .header a.logo {
+    font-size: 25px;
+    background-color: #0073c6 !important;
+    margin-left: 0px;
+  }
+
+  .header a:hover {
+    background-color: #0b0c61;
+    transition: 0.5s;
+    
+  }
+
+  .header a.active {
+    background-color: #0b0c61;
+    font-family: "segoeuib";
+
+  }
+
+  .header-right {
+    float: right;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .header a:not(:last-child) {display: none;}
+
+    .header{
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+    }
+    
+    .menuIcon{
+        display: unset;
+    }
+
+    .header a.active {
+      float: right;
+  
+    }
+    
+  }

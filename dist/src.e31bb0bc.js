@@ -29849,6 +29849,279 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
+},{"./fonts\\segoeui.ttf":[["segoeui.64eca717.ttf","fonts/segoeui.ttf"],"fonts/segoeui.ttf"],"./fonts\\segoeuib.ttf":[["segoeuib.b82ff5a2.ttf","fonts/segoeuib.ttf"],"fonts/segoeuib.ttf"],"./fonts\\segoeuil.ttf":[["segoeuil.d1bcfb72.ttf","fonts/segoeuil.ttf"],"fonts/segoeuil.ttf"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"img/Grupo 105.png":[function(require,module,exports) {
+module.exports = "/Grupo 105.c49fed01.png";
+},{}],"components/header.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/header.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireWildcard(require("react"));
+
+var _Grupo = _interopRequireDefault(require("../img/Grupo 105.png"));
+
+require("./header.css");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+var Header = /*#__PURE__*/function (_Component) {
+  _inherits(Header, _Component);
+
+  var _super = _createSuper(Header);
+
+  function Header(props) {
+    var _this;
+
+    _classCallCheck(this, Header);
+
+    _this = _super.call(this, props);
+    _this.state = {
+      logo: _Grupo.default,
+      title: "Lorem ipsum"
+    };
+    return _this;
+  }
+
+  _createClass(Header, [{
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/_react.default.createElement("div", {
+        className: "header"
+      }, /*#__PURE__*/_react.default.createElement("a", {
+        href: "#default",
+        class: "logo"
+      }, /*#__PURE__*/_react.default.createElement("img", {
+        src: this.state.logo
+      })), /*#__PURE__*/_react.default.createElement("button", {
+        className: "menuIcon"
+      }, /*#__PURE__*/_react.default.createElement("i", {
+        class: "fa fa-bars"
+      })), /*#__PURE__*/_react.default.createElement("div", {
+        class: "header-right"
+      }, /*#__PURE__*/_react.default.createElement("a", {
+        href: "#default"
+      }, this.state.title), /*#__PURE__*/_react.default.createElement("a", {
+        href: "#default"
+      }, this.state.title), /*#__PURE__*/_react.default.createElement("a", {
+        href: "#default"
+      }, this.state.title), /*#__PURE__*/_react.default.createElement("a", {
+        class: "active",
+        href: "#default"
+      }, this.state.title)));
+    }
+  }]);
+
+  return Header;
+}(_react.Component);
+
+var _default = Header;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js","../img/Grupo 105.png":"img/Grupo 105.png","./header.css":"components/header.css"}],"img/ballpen-blur-close-up-461077.png":[function(require,module,exports) {
+module.exports = "/ballpen-blur-close-up-461077.10a94405.png";
+},{}],"components/imgHeader.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/imgHeader.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireWildcard(require("react"));
+
+var _ballpenBlurCloseUp = _interopRequireDefault(require("../img/ballpen-blur-close-up-461077.png"));
+
+var _Grupo = _interopRequireDefault(require("../img/Grupo 105.png"));
+
+require("./imgHeader.css");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+var ImgHeader = /*#__PURE__*/function (_Component) {
+  _inherits(ImgHeader, _Component);
+
+  var _super = _createSuper(ImgHeader);
+
+  function ImgHeader(props) {
+    var _this;
+
+    _classCallCheck(this, ImgHeader);
+
+    _this = _super.call(this, props);
+    _this.state = {
+      img: _ballpenBlurCloseUp.default,
+      logo: _Grupo.default,
+      title: "Lorem ipsum",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+    };
+    return _this;
+  }
+
+  _createClass(ImgHeader, [{
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/_react.default.createElement("div", {
+        className: "imgContainer2"
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: "gradient"
+      }, /*#__PURE__*/_react.default.createElement("img", {
+        className: "imgHeader",
+        src: this.state.img
+      })), /*#__PURE__*/_react.default.createElement("figcaption", null, /*#__PURE__*/_react.default.createElement("h2", null, this.state.title), /*#__PURE__*/_react.default.createElement("p", null, this.state.text), /*#__PURE__*/_react.default.createElement("button", null, this.state.title), /*#__PURE__*/_react.default.createElement("div", {
+        className: "angleLogo"
+      }, /*#__PURE__*/_react.default.createElement("button", {
+        className: "btn"
+      }, /*#__PURE__*/_react.default.createElement("i", {
+        className: "fas fa-angle-down"
+      })), /*#__PURE__*/_react.default.createElement("img", {
+        className: "logoHeader",
+        src: this.state.logo
+      }))));
+    }
+  }]);
+
+  return ImgHeader;
+}(_react.Component);
+
+var _default = ImgHeader;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js","../img/ballpen-blur-close-up-461077.png":"img/ballpen-blur-close-up-461077.png","../img/Grupo 105.png":"img/Grupo 105.png","./imgHeader.css":"components/imgHeader.css"}],"components/description.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/description.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireWildcard(require("react"));
+
+require("./description.css");
+
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+var Description = /*#__PURE__*/function (_Component) {
+  _inherits(Description, _Component);
+
+  var _super = _createSuper(Description);
+
+  function Description(props) {
+    _classCallCheck(this, Description);
+
+    return _super.call(this, props);
+  }
+
+  _createClass(Description, [{
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/_react.default.createElement("div", {
+        className: "main-desc2"
+      }, /*#__PURE__*/_react.default.createElement("p", null, /*#__PURE__*/_react.default.createElement("span", null, "Lorem ipsum"), " dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."), /*#__PURE__*/_react.default.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida."));
+    }
+  }]);
+
+  return Description;
+}(_react.Component);
+
+var _default = Description;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js","./description.css":"components/description.css"}],"components/boringCards.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
 },{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/boringCards.js":[function(require,module,exports) {
 "use strict";
 
@@ -29858,6 +30131,8 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var _react = _interopRequireWildcard(require("react"));
+
+require("./boringCards.css");
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
@@ -29908,17 +30183,22 @@ var BoringCards = /*#__PURE__*/function (_Component) {
     value: function render() {
       var _this2 = this;
 
-      return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h1", {
-        className: "description"
-      }, this.state.name), [1, 2, 3, 4].map(function (number) {
+      return /*#__PURE__*/_react.default.createElement("div", {
+        className: "container"
+      }, /*#__PURE__*/_react.default.createElement("h1", {
+        className: "main-title"
+      }, this.state.name), /*#__PURE__*/_react.default.createElement("div", {
+        className: "cardContainer"
+      }, [1, 2, 3, 4].map(function (number) {
         return /*#__PURE__*/_react.default.createElement("div", {
+          className: "card",
           key: number
         }, /*#__PURE__*/_react.default.createElement("h2", {
           className: "cardTitle"
         }, _this2.state.name), /*#__PURE__*/_react.default.createElement("p", {
-          className: "card-description"
+          className: "desc"
         }, _this2.state.description));
-      }));
+      })));
     }
   }]);
 
@@ -29927,12 +30207,12 @@ var BoringCards = /*#__PURE__*/function (_Component) {
 
 var _default = BoringCards;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js"}],"components/colorfulCards.css":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./boringCards.css":"components/boringCards.css"}],"components/colorfulCards.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\fonts\\segoeui.ttf":[["segoeui.64eca717.ttf","fonts/segoeui.ttf"],"fonts/segoeui.ttf"],"./..\\fonts\\segoeuib.ttf":[["segoeuib.b82ff5a2.ttf","fonts/segoeuib.ttf"],"fonts/segoeuib.ttf"],"./..\\fonts\\segoeuil.ttf":[["segoeuil.d1bcfb72.ttf","fonts/segoeuil.ttf"],"fonts/segoeuil.ttf"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"img/Grupo de máscara 1.png":[function(require,module,exports) {
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"img/Grupo de máscara 1.png":[function(require,module,exports) {
 module.exports = "/Grupo de máscara 1.c65bed49.png";
 },{}],"components/colorfulCards.js":[function(require,module,exports) {
 "use strict";
@@ -30049,7 +30329,12 @@ module.exports = "/notebook-and-mouse-cursor.a74bbf34.png";
 module.exports = "/shield.74fa1fce.png";
 },{}],"img/support (1).png":[function(require,module,exports) {
 module.exports = "/support (1).07320cc1.png";
-},{}],"components/colorfulCards2.js":[function(require,module,exports) {
+},{}],"components/colorfulCards2.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/colorfulCards2.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -30064,6 +30349,8 @@ var _notebookAndMouseCursor = _interopRequireDefault(require("../img/notebook-an
 var _shield = _interopRequireDefault(require("../img/shield.png"));
 
 var _support = _interopRequireDefault(require("../img/support (1).png"));
+
+require("./colorfulCards2.css");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -30108,13 +30395,16 @@ var ColorfulCards2 = /*#__PURE__*/function (_Component) {
       name: "Lorem ipsum",
       colorsCards: [{
         color: "#7fba00",
-        icon: _notebookAndMouseCursor.default
+        icon: _support.default,
+        hover: false
       }, {
         color: "#00a4ef",
-        icon: _shield.default
+        icon: _shield.default,
+        hover: false
       }, {
         color: "#ffb900",
-        icon: _support.default
+        icon: _notebookAndMouseCursor.default,
+        hover: false
       }],
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida."
     };
@@ -30128,6 +30418,7 @@ var ColorfulCards2 = /*#__PURE__*/function (_Component) {
 
       var cardItens = this.state.colorsCards.map(function (card) {
         return /*#__PURE__*/_react.default.createElement("li", {
+          className: "cards",
           key: card.color
         }, /*#__PURE__*/_react.default.createElement("div", {
           className: "circle-icon",
@@ -30135,32 +30426,64 @@ var ColorfulCards2 = /*#__PURE__*/function (_Component) {
             background: card.color
           }
         }, /*#__PURE__*/_react.default.createElement("img", {
+          className: "icon2",
           src: card.icon
-        })), /*#__PURE__*/_react.default.createElement("h1", {
+        })), /*#__PURE__*/_react.default.createElement("div", {
+          className: "left"
+        }, /*#__PURE__*/_react.default.createElement("h1", {
           className: "title",
           style: {
             color: card.color
           }
-        }, _this2.state.name), /*#__PURE__*/_react.default.createElement("div", {
+        }, _this2.state.name + " dolor"), /*#__PURE__*/_react.default.createElement("div", {
           className: "line"
         }), /*#__PURE__*/_react.default.createElement("p", {
-          className: "description"
+          className: "main-desc3"
         }, _this2.state.description), /*#__PURE__*/_react.default.createElement("button", {
-          className: "cards2-button",
-          style: {
-            color: card.color,
-            outlineColor: card.color
+          id: card.color,
+          className: "button",
+          onMouseOver: _this2.toggleHover.bind(_this2),
+          onMouseOut: _this2.toggleHover.bind(_this2),
+          style: card.hover ? {
+            background: card.color
+          } : {
+            color: card.color
           }
-        }, _this2.state.name));
+        }, _this2.state.name)), /*#__PURE__*/_react.default.createElement("div", {
+          className: "circle-icon-H",
+          style: {
+            background: card.color
+          }
+        }, /*#__PURE__*/_react.default.createElement("img", {
+          className: "icon2",
+          src: card.icon
+        })));
       });
       return cardItens;
+    }
+  }, {
+    key: "toggleHover",
+    value: function toggleHover(e) {
+      var color = e.target.getAttribute("id");
+      var index = this.state.colorsCards.findIndex(function (element, index, array) {
+        return element.color === color;
+      });
+      var newState = this.state.colorsCards;
+      newState[index].hover = !newState[index].hover;
+      this.setState({
+        colorsCards: newState
+      });
     }
   }, {
     key: "render",
     value: function render() {
       return /*#__PURE__*/_react.default.createElement("div", {
-        className: "sections"
-      }, this.createCards());
+        className: "container2"
+      }, /*#__PURE__*/_react.default.createElement("h1", {
+        className: "main-title"
+      }, this.state.name), /*#__PURE__*/_react.default.createElement("div", {
+        className: "sections2"
+      }, this.createCards()));
     }
   }]);
 
@@ -30169,9 +30492,14 @@ var ColorfulCards2 = /*#__PURE__*/function (_Component) {
 
 var _default = ColorfulCards2;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","../img/notebook-and-mouse-cursor.png":"img/notebook-and-mouse-cursor.png","../img/shield.png":"img/shield.png","../img/support (1).png":"img/support (1).png"}],"img/achievement-adult-agreement-1391373.png":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","../img/notebook-and-mouse-cursor.png":"img/notebook-and-mouse-cursor.png","../img/shield.png":"img/shield.png","../img/support (1).png":"img/support (1).png","./colorfulCards2.css":"components/colorfulCards2.css"}],"img/achievement-adult-agreement-1391373.png":[function(require,module,exports) {
 module.exports = "/achievement-adult-agreement-1391373.094e1fbf.png";
-},{}],"components/imgText.js":[function(require,module,exports) {
+},{}],"components/imgText.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/imgText.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -30182,6 +30510,8 @@ exports.default = void 0;
 var _react = _interopRequireWildcard(require("react"));
 
 var _achievementAdultAgreement = _interopRequireDefault(require("../img/achievement-adult-agreement-1391373.png"));
+
+require("./imgText.css");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -30224,7 +30554,7 @@ var ImgText = /*#__PURE__*/function (_Component) {
     _this = _super.call(this, props);
     _this.state = {
       img: _achievementAdultAgreement.default,
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore"
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore"
     };
     return _this;
   }
@@ -30232,12 +30562,12 @@ var ImgText = /*#__PURE__*/function (_Component) {
   _createClass(ImgText, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("img", {
+      return /*#__PURE__*/_react.default.createElement("div", {
+        className: "imgContainer"
+      }, /*#__PURE__*/_react.default.createElement("img", {
         className: "img",
         src: this.state.img
-      }), /*#__PURE__*/_react.default.createElement("p", {
-        className: "text"
-      }, this.state.text));
+      }), /*#__PURE__*/_react.default.createElement("figcaption", null, this.state.text));
     }
   }]);
 
@@ -30246,7 +30576,99 @@ var ImgText = /*#__PURE__*/function (_Component) {
 
 var _default = ImgText;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","../img/achievement-adult-agreement-1391373.png":"img/achievement-adult-agreement-1391373.png"}],"App.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","../img/achievement-adult-agreement-1391373.png":"img/achievement-adult-agreement-1391373.png","./imgText.css":"components/imgText.css"}],"components/form.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"components/form.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireWildcard(require("react"));
+
+var _reactDom = require("react-dom");
+
+require("./form.css");
+
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+var Form = /*#__PURE__*/function (_Component) {
+  _inherits(Form, _Component);
+
+  var _super = _createSuper(Form);
+
+  function Form(props) {
+    var _this;
+
+    _classCallCheck(this, Form);
+
+    _this = _super.call(this, props);
+    _this.state = {
+      title: "Lorem ipsum",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+    };
+    return _this;
+  }
+
+  _createClass(Form, [{
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", {
+        className: "pDescription"
+      }, this.state.desc), /*#__PURE__*/_react.default.createElement("div", {
+        className: "formContainer"
+      }, /*#__PURE__*/_react.default.createElement("form", null, /*#__PURE__*/_react.default.createElement("label", null, this.state.title, /*#__PURE__*/_react.default.createElement("input", {
+        type: "text"
+      })), /*#__PURE__*/_react.default.createElement("label", null, this.state.title, /*#__PURE__*/_react.default.createElement("input", {
+        type: "text"
+      })), /*#__PURE__*/_react.default.createElement("label", null, this.state.title, /*#__PURE__*/_react.default.createElement("input", {
+        type: "text"
+      })), /*#__PURE__*/_react.default.createElement("label", null, this.state.title, /*#__PURE__*/_react.default.createElement("input", {
+        type: "text"
+      })), /*#__PURE__*/_react.default.createElement("label", null, this.state.title, /*#__PURE__*/_react.default.createElement("input", {
+        type: "text"
+      })), /*#__PURE__*/_react.default.createElement("input", {
+        type: "submit",
+        value: this.state.title
+      }))));
+    }
+  }]);
+
+  return Form;
+}(_react.Component);
+
+var _default = Form;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./form.css":"components/form.css"}],"App.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -30258,6 +30680,12 @@ var _react = _interopRequireWildcard(require("react"));
 
 require("./App.css");
 
+var _header = _interopRequireDefault(require("./components/header"));
+
+var _imgHeader = _interopRequireDefault(require("./components/imgHeader"));
+
+var _description = _interopRequireDefault(require("./components/description"));
+
 var _boringCards = _interopRequireDefault(require("./components/boringCards"));
 
 var _colorfulCards = _interopRequireDefault(require("./components/colorfulCards"));
@@ -30265,6 +30693,8 @@ var _colorfulCards = _interopRequireDefault(require("./components/colorfulCards"
 var _colorfulCards2 = _interopRequireDefault(require("./components/colorfulCards2"));
 
 var _imgText = _interopRequireDefault(require("./components/imgText"));
+
+var _form = _interopRequireDefault(require("./components/form"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -30310,7 +30740,7 @@ var App = /*#__PURE__*/function (_Component) {
     value: function render() {
       return /*#__PURE__*/_react.default.createElement("div", {
         className: "App"
-      }, /*#__PURE__*/_react.default.createElement(_colorfulCards.default, null), /*#__PURE__*/_react.default.createElement(_colorfulCards2.default, null), /*#__PURE__*/_react.default.createElement(_boringCards.default, null));
+      }, /*#__PURE__*/_react.default.createElement(_header.default, null), /*#__PURE__*/_react.default.createElement(_imgHeader.default, null), /*#__PURE__*/_react.default.createElement(_description.default, null), /*#__PURE__*/_react.default.createElement(_colorfulCards.default, null), /*#__PURE__*/_react.default.createElement(_colorfulCards2.default, null), /*#__PURE__*/_react.default.createElement(_boringCards.default, null), /*#__PURE__*/_react.default.createElement(_imgText.default, null), /*#__PURE__*/_react.default.createElement(_form.default, null));
     }
   }]);
 
@@ -30319,7 +30749,7 @@ var App = /*#__PURE__*/function (_Component) {
 
 var _default = App;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","./App.css":"App.css","./components/boringCards":"components/boringCards.js","./components/colorfulCards":"components/colorfulCards.js","./components/colorfulCards2":"components/colorfulCards2.js","./components/imgText":"components/imgText.js"}],"index.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./App.css":"App.css","./components/header":"components/header.js","./components/imgHeader":"components/imgHeader.js","./components/description":"components/description.js","./components/boringCards":"components/boringCards.js","./components/colorfulCards":"components/colorfulCards.js","./components/colorfulCards2":"components/colorfulCards2.js","./components/imgText":"components/imgText.js","./components/form":"components/form.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
@@ -30361,7 +30791,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51132" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63294" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

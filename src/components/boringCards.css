@@ -1,0 +1,37 @@
+
+.cardContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20vw , 1fr));
+    margin: 0px 100px 0 100px;
+}
+
+.card{
+    border: 3px solid rgb(223, 223, 223);
+    padding: 25px;
+    
+    margin-right: -3px;
+}
+
+.cardTitle{
+    color: rgb(255, 60, 0);
+    font-family: "segoeui";
+    font-size: 18px;
+}
+
+.desc{
+    font-family: "segoeui";
+    font-size: 16px;
+    color:rgb(138, 138, 138);
+}
+
+@media only screen and (max-width: 1000px){
+    .cardContainer{
+        grid-template-columns: repeat(auto-fit, minmax(60vw, 1fr));
+        margin: 0px 20px 0 20px;
+    }
+
+    .card{
+        margin-right: 0;
+        margin-bottom: -3px;
+    }
+}

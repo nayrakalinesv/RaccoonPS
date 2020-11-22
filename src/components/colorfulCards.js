@@ -39,7 +39,7 @@ class ColorfulCards extends Component {
             <h1 className="title">{this.state.name}</h1>
             <p className="descriptions">{this.state.descriptions[0]}</p>
           </div>
-        </li>
+        </li> 
       );
     });
     return cardItens;
